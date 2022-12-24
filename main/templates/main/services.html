@@ -1,0 +1,315 @@
+{% extends 'home.html'%}
+{% load static%}
+
+
+{% block body%}
+<div class='servicing'><span class='services-heading'><h1>Our Services</h1></span><div>
+<div class='services'>
+    
+    <div class= 'services-container'>
+        
+        <div class='services-box' style='--clr:#5dacbd;'>
+            
+            <div class='services-content'>
+                <div class='services-icon'><ion-icon name="construct-sharp"></ion-icon></div>
+                <div class='services-text'>
+                    <h3>Civil Engineering</h3>
+                    
+                    <a href="{% url 'media'%}">View our Pictures</a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class='services-box' style='--clr:#5dacbd;'>
+            <div class='services-content'>
+                <div class='services-icon'><ion-icon name="build-sharp"></ion-icon></div>
+                <div class='services-text'>
+                    <h3>Structural Design</h3>
+                    
+                    <a href="{% url 'media'%}">View our Pictures</a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class='services-box' style='--clr:#5dacbd'>
+            <div class='services-content'>
+                <div class='services-icon'><ion-icon name="home-sharp"></ion-icon></div>
+                <div class='services-text'>
+                    <h3>Building Projects</h3>
+                    
+                    <a href="{% url 'media'%}">View our Pictures</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class= 'services-container'>
+        <div class='services-box' style='--clr:#24527a;'>
+            <div class='services-content'>
+                <div class='services-icon'><ion-icon name="person-sharp"></ion-icon></div>
+                <div class='services-text'>
+                    <h3>Project Management</h3>
+                    
+                    <a href="{% url 'media'%}">View our Pictures</a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class='services-box' style='--clr:#24527a;'>
+            <div class='services-content'>
+                <div class='services-icon'><ion-icon name="git-branch-sharp"></ion-icon></div>
+                <div class='services-text'>
+                    <h3>Mechanical Services</h3>
+                    
+                    <a href="{% url 'media'%}">View our Pictures</a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class='services-box' style='--clr:#24527a'>
+            <div class='services-content'>
+                <div class='services-icon'><ion-icon name="bookmark-sharp"></ion-icon></div>
+                <div class='services-text'>
+                    <h3>Steel Structures</h3>
+                    
+                    <a href="{% url 'media'%}">View our Pictures</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class= 'services-container'>
+        <div class='services-box' style='--clr:#a7bcb9;'>
+            <div class='services-content'>
+                <div class='services-icon'><ion-icon name="git-branch-sharp"></ion-icon></div>
+                <div class='services-text'>
+                    <h3>Road Construction</h3>
+                    <a href="{% url 'media'%}">View our Pictures</a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class='services-box' style='--clr:#a7bcb9;'>
+            <div class='services-content'>
+                <div class='services-icon'><ion-icon name="logo-dropbox"></ion-icon></div>
+                <div class='services-text'>
+                    <h3>Architectural Drawing </h3>
+                    
+                    <a href="{% url 'media'%}">View our Pictures</a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class='services-box' style='--clr:#a7bcb9'>
+            <div class='services-content'>
+                <div class='services-icon'><ion-icon name="tablet-landscape-sharp"></ion-icon></div>
+                <div class='services-text'>
+                    <h3>Landscaping and General Services</h3>
+                    
+                    <a href="{% url 'media'%}">View our Pictures</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class= 'services-container'>
+        <div class='services-box' style='--clr:#a7bcb9;'>
+            <div class='services-content'>
+                <div class='services-icon'><ion-icon name="unlink-outline"></ion-icon></div>
+                <div class='services-text'>
+                    <h3>Interior Design</h3>
+                    <a href="{% url 'media'%}">View our Pictures</a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class='services-box' style='--clr:#a7bcb9;'>
+            <div class='services-content'>
+                <div class='services-icon'><ion-icon name="logo-electron"></ion-icon></div>
+                <div class='services-text'>
+                    <h3>Electrical Works </h3>
+                    
+                    <a href="{% url 'media'%}">View our Pictures</a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class='services-box' style='--clr:#a7bcb9'>
+            <div class='services-content'>
+                <div class='services-icon'><ion-icon name="business-outline"></ion-icon></div>
+                <div class='services-text'>
+                    <h3>Renovations</h3>
+                    
+                    <a href="{% url 'media'%}">View our Pictures</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</div>
+<style>
+    .services{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: linear-gradient(to bottom, #a2a8d3, #113f67);
+    }
+    .services-container{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 60px 0;
+        gap: 60px;
+
+
+
+
+    }
+    .services-container .services-box{
+        position: relative;
+        width: 300px;
+        height: 350px;
+        background: #2e2e2e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .services-container .services-box::after{
+        content: '';
+        position: absolute;
+        inset: -10px 50px;
+        border-top: 4px solid var(--clr);
+        border-bottom: 4px solid var(--clr);
+        z-index: 1;
+        transform: skewY(15deg);
+        transition: 0.5s ease-in-out;
+
+    }
+    .services-container .services-box:hover::after{
+        transform: skewY(0deg);
+        inset: -10px 40px;
+    }
+    .services-container .services-box .services-content{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 0 20px;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .services-container .services-box .services-content .services-icon{
+        color: var(--clr);
+        width: 80px;
+        height: 80px;
+        box-shadow: 0 0 0 4px #2e2e2e, 0 0 0 6px var(--clr);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.5em;
+        background: #2e2e2e;
+        transition: 0.5s ease-in-out;
+
+
+    }
+    .services-container .services-box:hover .services-content .services-icon{
+        box-shadow: 0 0 0 4px #2e2e2e, 0 0 0 300px var(--clr);
+        background: var(--clr);
+        color: #2e2e2e;
+    }
+    .services-container .services-box .services-content .services-text h3{
+        font-size: 1.5em;
+        color: #fff;
+        font-weight: 500;
+        transition: 0.5s ease-in-out;
+    }
+    .services-container .services-box:hover .services-content .services-text h3{
+        color: #2e2e2e;
+
+    }
+    .services-container .services-box .services-content .services-text p{
+        color: #999;
+        transition: 0.5s ease-in-out;
+    }
+    .services-container .services-box:hover .services-content .text p{
+        color: #2e2e2e;
+    }
+    .services-container .services-box .services-content .services-text a{
+        position: relative;
+        background: var(--clr);
+        color: #2e2e2e;
+        padding: 8px 15px;
+        display: inline-block;
+        text-decoration: none;
+        font-weight: 500;
+        margin-top: 10px;
+        transition: 0.5s ease-in-out; 
+    }
+    .services-container .services-box:hover .services-content .services-text a{
+        background: #2e2e2e;
+        color: var(--clr);
+    }
+    .services-heading{
+        text-align: center;
+
+        color: beige;
+    }
+    .servicing{
+        padding-top: 20px;
+        background: #a2a8d3;
+    }
+    @media screen and (max-width: 1200px){
+        .services-container{
+            width: 30vh;
+        }
+        .services-container .services-box{
+            width:30vh;
+        }
+
+    }
+    @media screen and (max-width: 1000px){
+        .services-container{
+            width: 30vh;
+        }
+        .services-container .services-box{
+            width:30vh;
+        }
+    }
+    @media screen and (max-width: 600px){
+        .services-container{
+            width: 30vh;
+        }
+        .services-container .services-box{
+            width:30vh;
+        }
+    }
+</style>
+
+{% endblock %}

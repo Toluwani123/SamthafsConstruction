@@ -1,0 +1,132 @@
+{% extends 'home.html'%}
+{% load static%}
+
+
+{% block body%}
+<div class='gallery'>
+    <div class='full-img' id='fullImgBox'>
+        <img src="{% static 'main/images/Image_1.png'%}" id='fullImg'/>
+        <span onclick="closeFullImg()">X</span>
+    </div>  
+    <div class='image-gallery'>
+        <img src="{% static 'main/images/Image_1.png'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_2.png'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_3.png'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_4.png'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_5.png'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_6.png'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_7.png'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_8.png'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_9.png'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_10.png'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_11.png'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_12.png'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_13.png'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_14.jpg'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_15.jpg'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_16.jpg'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_17.jpg'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_18.jpg'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_19.jpg'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_20.jpg'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_21.jpg'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_22.jpg'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_23.jpg'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_24.jpg'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_25.jpg'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_26.jpg'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_27.jpg'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_28.jpg'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_29.jpg'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_30.jpg'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_31.jpg'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_32.jpg'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_33.jpg'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_34.jpg'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_35.jpg'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_36.jpg'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_37.jpg'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_38.jpg'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_39.jpg'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_40.jpg'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_41.jpg'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_42.jpg'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_43.jpg'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_44.jpg'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_45.jpg'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_46.jpg'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_47.jpg'%}" onclick="openFullImg(this.src)"/>
+        <img src="{% static 'main/images/Image_48.jpg'%}" onclick="openFullImg(this.src)"/>
+
+
+    </div>
+
+</div>
+<style>
+    .image-gallery{
+        width: 80%;
+        margin: 100px auto 50px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 30px;
+
+
+    }
+    .image-gallery img{
+        width: 100%;
+        cursor: pointer;
+        transition: all 0.5s ease;
+    }
+    .image-gallery img:hover{
+        transform: scale(0.8) rotate(-15deg);
+        border-radius: 20px;
+        box-shadow: 0 32px 75px rgba(68,77,136,0.2);
+        
+
+    }
+    .full-img{
+        width: 100%;
+        height: 100vh;
+        background: rgba(0,0,0,0.9);
+        position: fixed;
+        top: 0;
+        left:0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 100;
+
+    }
+    .full-img img{
+        width: 90%;
+        max-width: 500px;
+
+    }
+    .full-img span{
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        font-size: 30px;
+        color: #fff;
+        cursor: pointer;
+
+    }
+
+    
+    
+</style>
+<script>
+    const fullImgBox = document.getElementById('fullImgBox');
+    const fullImg = document.getElementById('fullImg');
+
+    function openFullImg(pic){
+        fullImgBox.style.display = "flex";
+        fullImg.src = pic;
+    }
+    function closeFullImg(){
+        fullImgBox.style.display = 'none'
+    }
+
+    
+</script>
+{%endblock%}
